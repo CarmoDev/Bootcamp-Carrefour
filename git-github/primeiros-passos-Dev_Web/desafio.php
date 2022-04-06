@@ -26,7 +26,7 @@
                 print("
                 <h3>Capitulo $i</h3>
                     <div>
-                        <p>Bom multiplas coisas me levaram para o caminho da programação</p>
+                        <p>Bom multiplas coisas me levaram para o caminho da programação, pretendo contar essa história pelo linkedin segue lá: <a href=\"https://www.linkedin.com/in/jefferson-santos-b22701231/\">Jefferson Santos</a></p>
                     </div>
                 ");
             }
