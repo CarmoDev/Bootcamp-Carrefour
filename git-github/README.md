@@ -1,3 +1,3 @@
-    # Livro de Receitas :man_cook
-
-    ## Múltiplas receitas deliciosas
+   # Livro de Receitas 👨‍🍳   
+ 
+## Multiplas receitas maravilhosas
