@@ -35,7 +35,7 @@ a {
 
 .post_content {
     text-transform: capitalize;
-    margin: 15px;
+    margin: 0 0 15px 15px;
 }
 
 .post_image {
@@ -52,8 +52,6 @@ a {
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%);
 }
-
-
 
 .contacts_list {
     list-style-type: none;
