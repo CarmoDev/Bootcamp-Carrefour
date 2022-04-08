@@ -1,15 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Primeiro site com bootstrap</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        
-        <script src="" async defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Primeiro site com bootstrap</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="#" class="navbar-brand">
+        <img src="imgs/D'AlvaLogo.png" width="120" height="80" alt="D'alva" class="imgNav" />
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#quemSomos" class="navlink">Quem Somos</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#parceiros" class="navlink">Parceiros</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#Servicos" class="navlink">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="quemSomos">
+      <div class="container-fluid padding text-center quem-somos">
+        <h3 class="margin">Quem Somos</h3>
+        <img
+          src="imgs/pexels-fauxels-3183197.jpg"
+          alt="Equipe"
+          width="400px"
+          height="400px"
+          class="rounded-circle margin"
+        />
+        <h3>Somos um time comprometido com os resultados</h3>
+      </div>
+    </section>
+
+    <section id="parceiros">
+      <div class="container-fluid text-center padding parceiros">
+        <h3 class="margin">Parceiros</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                src="imgs/i489932.webp"
+                alt="Google"
+                width="80%"
+                height="300px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="imgs/facebook.png"
+                alt="facebook"
+                width="80%"
+                height="300px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="imgs/gitHub.webp"
+                alt="github"
+                width="80%"
+                height="300px"
+                class="rounded-circle"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Servicos">
+      <div class="container-fluid text-center padding servicos">
+        <h3 class="services_title">Serviços</h3>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="imgs/pexels-pixabay-39284.jpg" alt="WebSite" width="90%"/>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestias temporibus est reiciendis enim nisi perspiciatis, id dolorem magni maiores assumenda, harum sed doloremque odit? Dolorem corporis omnis consectetur ex </p>
+          </div>
+          <div class="col-lg-4">
+            <img src="imgs/pexels-daria-shevtsova-1440722.jpg" alt="app" width="90%"/>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestias temporibus est reiciendis enim nisi perspiciatis, id dolorem magni maiores assumenda, harum sed doloremque odit? Dolorem corporis omnis consectetur ex </p>
+          </div>
+          <div class="col-lg-4">
+            <img src="imgs/pexels-burst-374631.jpg" alt="app" width="90%"/>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestias temporibus est reiciendis enim nisi perspiciatis, id dolorem magni maiores assumenda, harum sed doloremque odit? Dolorem corporis omnis consectetur ex </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid text-center bg-footer padding">
+      <p>Desenvolvido por Jefferson Santos</p>
+    </footer>
+
+  </body>
 </html>

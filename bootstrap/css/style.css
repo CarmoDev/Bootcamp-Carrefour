@@ -1,0 +1,53 @@
+.imgNav {
+    margin: 10px;
+}
+
+.navbar {
+    background-color: #2E2E2E;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #20E4B2;
+}
+
+.navlink:hover {
+    color: #63c8af;
+    transition: .3s;
+}
+
+.quem-somos {
+    background-color: #585858;
+}
+
+.padding {
+    padding: 50px 0;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+/*Parceiros*/
+
+.parceiros {
+    background-color: #6a6a6a;
+}
+
+/*Services*/
+
+#Servicos {
+    background-color: #6a6a6a;
+}
+
+.services_title {
+    padding-bottom: 40px;
+}
+
+/*footer*/
+
+.bg-footer {
+    background-color: #2E2E2E;
+    color: #6a6a6a;
+}
