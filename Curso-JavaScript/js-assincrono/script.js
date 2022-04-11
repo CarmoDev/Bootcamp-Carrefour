@@ -1,22 +1,31 @@
-const BASE_URL = 'https://api.thecatapi.com/v1/images/search?';
+function ajax_get(url, callback) {
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      console.log("responseText:" + xmlhttp.responseText);
+      try {
+        var data = JSON.parse(xmlhttp.responseText);
+      } catch (err) {
+        console.log(err.message + " in " + xmlhttp.responseText);
+        return;
+      }
+      callback(data);
+    }
+  };
 
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
+}
 
-const getCats = async () => {
-	try {
-		const data = await fetch(BASE_URL);
-		const json = await data.json();
-		return json.webpurl;
-	} catch (e) {
-		console.log(e.message);
-	}
-};
+function changeCat() {
+  ajax_get(
+    "https://api.thecatapi.com/v1/images/search?size=full",
+    function (data) {
+      let html = `<img src="${data[0]["url"]}"  width="500px" height="500px">`;
+      document.getElementById("cat").innerHTML = html;
+    }
+  );
+}
+changeCat()
 
-const loadImg = async () => {
-	const img = document.getElementsByTagName('img')[0];
-	img.src = await getCats();
-};
-
-loadImg();
-
-const btn = document.getElementById('change-cat');
-btn.addEventListener('click', loadImg);
+document.getElementById('change-cat').addEventListener('click', changeCat)
